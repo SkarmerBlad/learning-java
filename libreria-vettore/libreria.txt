@@ -1,0 +1,6 @@
+progetto per creare la mia libreria che contiene libri e fumetti;
+ogni libro è composto da una data di pubblicazione, un autore, numero di pagine e categoria;
+la libreria mi deve permettere di aggiungere un libro, visualizzare il contenuto della libreria
+
+vorrei che fosse ordinata in base al nome del libro (actually i don t really know how to implement that shit)
+
