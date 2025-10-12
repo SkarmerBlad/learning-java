@@ -44,7 +44,6 @@ public class Distributore{
 		if(this.soldiInseriti >= arr[numeroElemento].getPrice()){
 			System.out.println("puoi ritirare l'oggetto");
 			this.restoDovuto = this.soldiInseriti - arr[numeroElemento].getPrice();
-			this.soldiInseriti = 0;
 		}
 		else{
 			System.out.println("importo non valido inserisci altri soldi.");
@@ -52,7 +51,9 @@ public class Distributore{
 	}
 
 	public double getChange(){
+		this.soldiInseriti = 0;
 		return this.restoDovuto;
+
 	}
 	
 }
