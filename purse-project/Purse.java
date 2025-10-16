@@ -28,12 +28,22 @@ public class Purse{
 		}
 	}
 
-	public int findCoin(Coin aCoin){
-		for(Coin moneta:arr){
-			if(moneta.getValue() == aCoin.getValue()){
-				return arr.indexOf(moneta);
+	public int find(Coin aCoin){
+		boolean trovato = false;
+		int indice = 0;
+		while (trovato == false){
+			for(Coin moneta : this.arr){
+				if(moneta.getValue() == aCoin.getValue()){
+					indice = arr.indexOf(moneta);
+					trovato = true;
+				}
 			}
-		return 0;
 		}
-	}	
+		if(trovato){
+			return indice;
+		}
+		else{
+			return -1;
+		}
+	}
 }
