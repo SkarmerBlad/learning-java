@@ -8,7 +8,7 @@ public class Libro{
   private String genereLibro;
 
   //costruttore
-  public Libro(String titoloLibro, String nomeAutore, int annoPubblicazione, double costoLibro){
+  public Libro(String titoloLibro, String nomeAutore, int annoPubblicazione, double costoLibro, String genereLibro){
     this.annoPubblicazione = annoPubblicazione;
     this.nomeAutore = nomeAutore;
     this.costoLibro = costoLibro;
@@ -34,7 +34,7 @@ public class Libro{
   }
 
   public String getGenere(){
-    return this.genereLibro
+    return this.genereLibro;
   }
 
   public void stampaInformazioni(){
