@@ -20,7 +20,11 @@ public class Coin{
 
 	@Override
 	public boolean equals(Object aCoin){
-		Coin other = (Coin) aCoin;
-		return other.getValue() == this.value; 	
+		if(aCoin.this.getValue() == this.value){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 }
